@@ -1,0 +1,25 @@
+// relies on blueprint!
+
+=full_width_container
+  :height auto
+  :width 100%
+  :margin 0 auto
+  +clearfix
+  +last
+
+=push_w_no_bottom_margin(!n)
+  position: relative
+  :margin= 0 (-!blueprint_grid_outer_width * !n) 0 (!blueprint_grid_outer_width * !n)
+
+
+=one_half_column( !width = !blueprint_grid_columns, !is_last = false)
+  !cols = floor( !width / 2 )
+  +column(!cols, !is_last)
+
+=one_third_column( !width = !blueprint_grid_columns, !is_last = false)
+  !cols = floor( !width / 3 )
+  +column(!cols, !is_last)
+
+=two_thirds_column( !width = !blueprint_grid_columns, !is_last = false)
+  !cols = ceil(2 * !width / 3)
+  +column(!cols, !is_last)
