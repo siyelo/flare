@@ -35,9 +35,9 @@
 
 =build_awesome_button( !btn_name, !bg_color, !color, !border_color = !color)
   #{!btn_name}.awesome, #{!btn_name}.awesome:visited
-    +awesome-btn_color( !bg_color, !color, !border_color )
+    +awesome_color( !bg_color, !color, !border_color )
   #{!btn_name}.awesome:hover, #{!btn_name}.awesome:focus
-    +awesome-btn_hover_color( !bg_color, !color)
+    +awesome_hover_color( !bg_color, !color)
 
 =awesome-btn
   float: left
@@ -73,10 +73,10 @@
     input[type=submit]
       +awesome-btn
       +medium
-      +awesome-btn_color( !btn_light_grey, !btn_dark_blue )
+      +awesome_color( !btn_light_grey, !btn_dark_blue )
 
       &:hover, &:focus
-        +awesome-btn_hover_color( !btn_light_grey, !btn_dark_blue )
+        +awesome_hover_color( !btn_light_grey, !btn_dark_blue )
 
     .awesome, .awesome:visited
       +awesome-btn
