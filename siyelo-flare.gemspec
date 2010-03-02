@@ -5,7 +5,7 @@
 
 Gem::Specification.new do |s|
   s.name = %q{siyelo-flare}
-  s.version = "0.1.3"
+  s.version = "0.1.4"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Glenn Roberts"]
@@ -28,12 +28,16 @@ Gem::Specification.new do |s|
      "lib/flare.rb",
      "lib/flare/compass_plugin.rb",
      "sass/flare/_buttons.sass",
+     "sass/flare/_layout.sass",
+     "sass/flare/_sprites.sass",
      "siyelo-flare.gemspec",
      "spec/siyelo-flare_spec.rb",
      "spec/spec.opts",
      "spec/spec_helper.rb",
      "templates/project/buttons.sass",
-     "templates/project/manifest.rb"
+     "templates/project/layout.sass",
+     "templates/project/manifest.rb",
+     "templates/project/sprites.sass"
   ]
   s.homepage = %q{http://github.com/siyelo/siyelo-flare}
   s.rdoc_options = ["--charset=UTF-8"]
